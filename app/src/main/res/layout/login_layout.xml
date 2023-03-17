@@ -10,49 +10,76 @@
     <ImageView
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:src="@drawable/controle"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:src="@drawable/controle">
 
     </ImageView>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:startIconContentDescription=""
-        android:id="@+id/Email"
-        app:startIconDrawable="@drawable/baseline_email_24"
-        >
+        app:startIconContentDescription="Icone de Email"
+
+        app:startIconDrawable="@drawable/baseline_email_24">
+
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Insira seu e-mail"/>
+            android:layout_margin="5dp"
+            android:hint="Insira seu e-mail"
+            android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/Senha"
+        app:endIconContentDescription="Icone de Email"
         app:startIconDrawable="@drawable/baseline_email_24"
 
         >
+
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Senha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:hint="Insira sua senha"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword" />
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="top"
+            android:text="Esqueceu sua senha"
+            android:textSize="12sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="entrar"
-        />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="sair"
-        android:layout_gravity=""
-        >
-    </Button>
-</LinearLayout>
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+
+            android:text="entrar" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal"
+            android:text="sair"
+
+
+            ></Button>
+    </LinearLayout>

@@ -18,15 +18,15 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
         app:startIconContentDescription="Icone de Email"
-
         app:startIconDrawable="@drawable/baseline_email_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_marginHorizontal="20sp"
             android:hint="Insira seu e-mail"
             android:inputType="textEmailAddress" />
 
@@ -35,7 +35,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         app:endIconContentDescription="Icone de Email"
+        app:endIconMode="password_toggle"
         app:startIconDrawable="@drawable/baseline_email_24"
 
         >
@@ -44,7 +46,8 @@
             android:id="@+id/Senha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="15dp"
             android:hint="Insira sua senha"
             android:inputType="textPassword" />
 
@@ -53,8 +56,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
+            android:layout_marginRight="20dp"
             android:gravity="top"
-            android:text="Esqueceu sua senha"
+            android:text="Esqueceu sua senha?"
             android:textSize="12sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -81,5 +85,9 @@
             android:text="sair"
 
 
-            ></Button>
+            >
+
+        </Button>
+
     </LinearLayout>
+</LinearLayout>
